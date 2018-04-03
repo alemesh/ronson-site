@@ -57,4 +57,145 @@ body
 	background-color: $accent
 	color: #fff
 
+
+
+//======================================
+
+img
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, p, span
+	margin: 0 auto
+	padding: 0 auto
+	text-decoration: none
+	font-weight: normal
+
+ul
+	margin: 0 auto
+
+.main-holder
+	overflow: hidden
+	max-width: 1300px
+	margin: 0 auto
+	padding: 0 35px
+	position: relative
+
+//=============== navigation section =======================
+
+.header-conteiner
+	position: relative
+	width: 100%
+	min-height: 115px
+	//background: #fff
+	//background: #eeeeee
+
+	.logo
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 2
+
+	.info-section
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		border-bottom: 2px solid #ececec
+		font-size: 21px
+		line-height: 1.2
+		text-align: center
+		font-family: "Heebo-Regular"
+	ul
+		list-style: none
+		display: flex
+		flex-wrap: wrap
+		min-height: 50px
+		align-items: center
+
+
+
+	.info-left
+		margin-left: 190px
+		color: rgb(0, 0, 0)
+		li
+			direction: rtl
+			border-right: 2px solid #ececec
+			min-height: 50px
+			display: flex
+			align-items: center
+			padding: 0 20px
+			&:first-child
+				padding-left: 35px
+			&:hover
+				background: #ececec
+				transition: all 0.5s ease
+			a, a:hover
+				text-decoration: none
+				color: rgb(0, 0, 0)
+			span
+				color: #dc484d
+	.post-card
+		background-image: url(../img/post-card.png)
+		display: block
+		width: 25px
+		height: 18px
+
+
+
+	.info-right
+		color: rgb(163, 163, 163)
+		margin-right: 10px
+		li
+			direction: rtl
+			min-height: 50px
+			display: flex
+			align-items: center
+			padding: 0 25px
+			&:first-child
+				padding-right: 15px
+				border-right:  2px solid #ececec
+			&:hover
+				background: #ececec
+				transition: all 0.5s ease
+			a, a:hover
+				text-decoration: none
+				color: rgb(163, 163, 163)
+
+	.facebook
+		background-image: url(../img/facebook.png)
+		display: block
+		width: 9px
+		height: 18px
+	.youtube
+		background-image: url(../img/youtube.png)
+		display: block
+		width: 26px
+		height: 19px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "media" // Всегда в конце
