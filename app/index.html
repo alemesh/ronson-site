@@ -5,14 +5,14 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Ronson</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon2.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
@@ -52,16 +52,55 @@
 				</div>
 				<div class="nav-section">
 					<ul>
-						<li>111111</li>
-						<li>פרסומי</li>
-						<li>איך זה עובד?</li>
-						<li>למה פולין?</li>
-						<li>אינדקס</li>
-						<li>מיקום</li>
+						<li><a href="#">צרו קשר</a></li>
+						<li><a href="#">פרסומים</a></li>
+						<li><a href="#">איך זה עובד?</a></li>
+						<li><a href="#">למה פולין?</a></li>
+						<li><a href="#">אינדקס</a></li>
+						<li><a href="#">מיקום</a></li>
 					</ul>
 				</div>
 
 			</div>
+		</div>
+
+		<div class="main">
+			<div class="home-header" style="background-image: url(img/background-header2.png)">
+                <div class="rectangle-left"></div>
+                <div class="rectangle-right"></div>
+                <span class="label">Gofman creative</span>
+                <div class="content">
+                    <div class="title">
+                        <h1>רונסון נדל”ן</h1>
+                        <p>כבר 20 שנה בונים את פולין</p>
+                    </div>
+                    <div class="red-label">
+                        <p>השיגו תשואות גבוהות בהשקעה נמוכה!</p>
+                    </div>
+                </div>
+
+			</div>
+
+            <div class="form-hold">
+                <h3>לפגישה וקבלת פרטים אודות דירות להשקעה בטוחה בפולין, השאירו פרטים</h3>
+                <form action="form_processing.php" class="form form-validation" method="post">
+                    <div class="form-row-wrap">
+                        <div class="form-row">
+                            <input name="name" class="form-control" required data-required="true" type="text"  placeholder="שם מלא*">
+                        </div>
+                        <div class="form-row">
+                            <input name="tel" class="form-control" required data-required="true" type="text" placeholder="טלפון*" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
+                        </div>
+                        <div class="form-row">
+                            <input name="email" class="form-control" required type="email" placeholder="דוא”ל">
+                        </div>
+                        <div class="form-row">
+                            <input type="submit" class="btn" value="שלח >">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
 		</div>
 
 	</div>

@@ -87,8 +87,15 @@ ul
 	position: relative
 	width: 100%
 	min-height: 115px
+	display: flex
+	flex-direction: column
 	//background: #fff
 	//background: #eeeeee
+
+	a, a:hover
+		text-decoration: none
+		color: rgb(0, 0, 0)
+
 
 	.logo
 		position: absolute
@@ -172,14 +179,202 @@ ul
 		width: 26px
 		height: 19px
 
+	.nav-section
+		position: relative
+		display: flex
+		flex-direction: row
+		min-height: 63px
+		justify-content: flex-end
+		//align-items: right
+		//align-content: right
+		ul
+			display: flex
+			justify-content: right
+			margin: 0 15px 0 220px
+			font-size: 20px
+			color: rgb(0, 0, 0)
+			line-height: 1.2
+			font-family: "Heebo-Medium"
+			li
+				direction: rtl
+				min-height: 100%
+				display: flex
+				align-items: center
+				margin: 0 15px
+
+//==================== header section =======================
+
+.main
+  .home-header
+    width: 100%
+    min-height: 532px
+    position: relative
+    background-repeat: no-repeat
+    //background-size: cover
+    //display: flex
+    //justify-content: center
+  .rectangle-left
+    position: absolute
+    top: 0
+    left: 0
+    width: 191px
+    height: 312px
+    background-image: url(../img/rectangle-left.png)
+  .rectangle-right
+    position: absolute
+    top: 0
+    right: -560px
+    bottom: 0
+    width: 100%
+    max-width: 870px
+    background: #e83647
+    opacity: .95
+    transform: skewX(-30deg)
+    //height: 625px
+    //min-height: 652px
+    //position: absolute
+    //top: 0
+    //right: 0
+    //width: 580px
+    ////min-height: 652px
+    //height: 100%
+    //background-image: url(../img/rectangle-right.png)
+    //background-repeat: no-repeat
+    //background-size: cover
+
+
+  .content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 100px
+  .title
+    direction: rtl
+    text-align: center
+    h1
+      font-size: 71px
+      font-family: "Heebo-Bold"
+      color: rgb(0, 0, 0)
+      line-height: 1.2
+    p
+      font-size: 49px
+      font-family: "Heebo-Regular"
+      color: rgb(0, 0, 0)
+      line-height: 1.2
+
+  .red-label
+    background: #e42a37
+    p
+      direction: rtl
+      font-size: 27px
+      font-family: "Heebo-Bold"
+      color: rgb(255, 255, 255)
+      line-height: 0.972
+      display: inline-block
+      margin: 12px 25px
+
+  .label
+    z-index: 50
+    position: absolute
+    padding: 15px 15px
+    right: -40px
+    bottom: 20%
+    color: #fff
+    text-transform: uppercase
+    font-size: 10px
+    //-webkit-transform: rotate(-90deg)
+    //-ms-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+    &:after
+      content: ''
+      position: absolute
+      right: 109px
+      top: 48%
+      //-webkit-transform: translateY(-50%)
+      //-ms-transform: translateY(-50%)
+      transform: translateY(-50%)
+      width: 5px
+      height: 5px
+      background: #fff
+      //-webkit-border-radius: 50%
+      border-radius: 50%
+
+
+//============== form section ===================
+
+.form-hold
+  //bottom: 0
+  //left: 0
+  //width: 100%
+  //display: block
+  background: black
+  //position: absolute
+  padding: 25px
+  min-height: 160px
 
 
 
+  h3
+    color: #fff
+    text-align: center
+    font-family: "Heebo-Bold", Helvetica
+    font-size: 24px
+    line-height: 1.1
+    margin: 0 0 20px
 
+  .form
+    direction: rtl
+    max-width: 1140px
+    margin: 0 auto
+    position: relative
+    transition: opacity 0.2s ease-in-out
 
+  .form-row-wrap
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -8px
 
+  .form-row
+    width: 25%
+    padding: 0 8px
 
+  .form-control
+    padding: 10px
+    direction: rtl
+    display: block
+    width: 100%
+    height: 60px
+    color: #b5b5b5
+    border: none
+    font-size: 23px
+    font-family: "Heebo-Regular"
+    line-height: 1.2
+    text-decoration: none
+    transition: all .5s ease
+    &:hover
+      background-color: #dad8d2
+      //border-top: 2px solid red
+      text-decoration: none
+      color: #111
 
+  .btn
+    background: #e42a37
+    font-family: "Heebo-Regular"
+    color: white
+    text-align: center
+    height: 60px
+    border: none
+    outline: none
+    display: block
+    width: 100%
+    font-size: 23px
+    text-decoration: none
+    transition: all .5s ease
+    &:hover
+      background-color: #c11b27
+      text-decoration: none
+//color: #111
 
 
 
