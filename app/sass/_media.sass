@@ -2,23 +2,97 @@
 
 /*==========  Desktop First  ==========*/
 
-
+@media only screen and (max-width : 1370px)
+    .main
+      .home-header
+        //min-height: 500px
+        min-height: 536px
+        background-size: contain
+      .rectangle-right
+        right: -600px
+      .content
+        padding-top: 32px
+      .title
+        h1
+          font-size: 64px
+        p
+          font-size: 45px
+      .red-label
+        p
+          font-size: 23px
+      .label
+        bottom: 38%
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+    .header-conteiner
+      .info-left
+        .head-hidden
+          display: none
+
+    .main
+      .rectangle-right
+        right: -750px
+      .home-header
+        background-size: cover
+      .content
+        padding-top: 100px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+    .header-conteiner
+      .nav-section
+        ul
+          display: none
+          position: absolute
+          top: 63px
+          //right: 0
+          z-index: 999
+          //max-width: 100%
+          width: 100%
+          margin: 0 auto
+          color: white
+          background-color: rgb(228, 42, 55)
+          opacity: 0.902
+          li
+            display: flex
+            justify-content: center
+            padding: 11px
+          a, a:hover
+            text-decoration: none
+            color: white
+
+    .form-hold
+      h3
+        font-size: 22px
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+    .main
+      .rectangle-right
+        display: none
+      .rectangle-left
+        display: none
+
+    .header-conteiner
+      .nav-section
+        min-height: 75px
+      .logo
+        top: 51px
+        width: 173px
+      .info-left
+        margin-left: 0
+        padding-left: 0
+        li
+          &:first-child
+            padding-left: 20px
+
     .form-hold
       //padding-top: 450px
-      position: static
+      //position: static
       background: black
 
       .form-row
@@ -51,6 +125,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+    .header-conteiner
+      .info-section
+        font-size: 15px
+      .info-right
+        li
+
     .form-hold
       //padding-top: 298px
       //position: static
